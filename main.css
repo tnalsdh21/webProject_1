@@ -1,0 +1,342 @@
+/* COMMON */
+.body__container{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:16px;
+    font-weight:400;
+    color:#333;
+}
+a{
+    text-decoration:none;
+}
+footer{
+    background:rgba(0,0,0,.2)
+}
+/* //////////////common////////////// */
+
+/* FLOAT CLEARFIX */
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+.float--left{
+    float:left;
+}
+.float--right{
+    float:right;
+}
+/* ///////float clearfix//////// */
+
+/* BUTTON */
+.btn{
+    height:34px;
+    background:#eee linear-gradient(to botto, #fcfcfc, #eee);
+    border : 1px solid #d5d5d5;
+    border-radius: 4px;
+    display:inline-flex;
+    align-items: center;
+    padding:0 12px;
+    font-size:14px;
+    font-weight:500;
+    line-height:1.5;
+    cursor:pointer;
+    box-sizing:border-box;
+    position:relative;
+    color:#333;
+}
+.btn:hover::before{
+    content:"";
+    position:absolute;
+    top:o;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.07);
+}
+.btn.btn--primary{
+    border: 1px solid rgb(116, 163, 192);
+    color:#fff;
+    background:rgb(55, 182, 233) linear-gradient(rgb(116,163,192), rgb(55, 182,244));
+}
+
+.btn .slider__btn_1{
+
+}
+.btn .slider__btn_2{
+
+}
+#left-button{
+    border:none;
+    position:absolute;
+    height:100%;
+    top:0;
+    left:0;
+    width:7%;
+    background: rgba(0,0,0,.2);
+    
+}
+#right-button{
+    border:none;
+    position:absolute;
+    height:100%;
+    top:0;
+    right:0;
+    width:7%;
+    background: rgba(0,0,0,.2);
+}
+
+.btn--login--submit{
+    max-width: 490px;
+    
+}
+/* ////button///// */
+
+/* HEADER */
+header{
+    border-bottom:1px solid rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
+    background:#fff;
+}
+header .inner{
+    max-width:980px;
+    height:78px;
+    margin:0 auto;
+}
+header .menu-group{
+    display:flex;
+    align-items:center;
+    height:100%;
+}
+header .logo{
+    margin-right:10px;
+}
+header .logo a{
+   /* background:url("./logo.png"); */
+}
+header .main-menu{
+    display:flex;
+}
+header .main-menu li a{
+    display : block;
+    padding:10px;
+    color:#3c4146;
+}
+header .main-menu li a:hover{
+    color:#4078c0;
+}
+header .sign-group{
+    display:flex;
+    align-items: center;
+    height:100%;
+}
+header .btn-group{
+    order:2;
+    display:flex;
+}
+header .btn-group .sign-in{
+    margin-right:4px;
+}
+header .sub-menu{
+    display:flex;
+    margin-right:10px;
+}
+header .sub-menu li a{
+    display:block;
+    padding:8px;
+    font-size:13px;
+    color:#3c4146;
+}
+header .sub-menu li a:hover{
+    color: #4078c0;
+}
+/* ////header//// */
+
+/* SUMMARY */
+.summary__title{
+    font-size:38px;
+    font-weight:300;
+    line-height:1.5;
+    margin-bottom:18px;
+}
+.summary__description{
+    font-size:26px;
+    font-weight:300;
+    color:#767676;
+    line-height:1.5;
+}
+/* //////////summary///////// */
+
+/* SECTION&INNER */
+.section{
+    position:relative;
+}
+.section .inner{
+    max-width:980px;
+    margin:0 auto;
+    box-sizing:border-box;
+    position:relative;
+}
+/* ////////section&inner */
+
+/* VISUAL */
+.section--visual{
+    position:relative;
+    background-image:url("./img/building.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+}
+.section--visual::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,.3);
+}
+.section--visual .inner{
+    padding : 160px 0;
+    display:flex;
+}
+.section--visual .summary{
+    flex-basis:0;
+    flex-grow:1;
+    margin-right:90px;
+}
+.section--visual .summary__title{
+    color:#FFF;
+    font-size: 54px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25),
+                0 1px 25px rgba(0,0,0,.75);
+}
+.section--visual .summary__description{
+    color:#FFF;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25),
+                0 1px 25px rgba(0,0,0,.75);
+}
+
+/* 슬라이더 페이지 */
+.section--slider{
+    position: relative;
+    background:powderblue;
+    width:100%;
+    margin-bottom: 10px;
+}
+.section--slider .inner{
+    padding : 30px 10%;
+    display:flex;
+    margin:0;
+}
+
+.section--slider .slider__item{
+    width:1000px;
+    float:left;
+    line-height:50px;
+}
+.section--slider .slider__title{
+    color: #FFF;
+    font-size: 28px;
+    line-height:1.5;
+    margin-bottom: 8px;
+}
+.section--slider .slider__summary{
+    color:#fff;
+    font-size: 20px;
+    line-height:1.5;
+    margin-bottom:5px;
+}
+
+div.slider__item:nth-child(1) {
+    background:powderblue;
+
+}
+
+div.slider__item:nth-child(2) {
+    background: bisque;
+
+}
+
+
+
+
+/* 인덱스에서 뉴스 */
+.section--news{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section--news .news__box{
+    
+}
+.section--news.news__title{
+    font-size:22px;
+    text-align: center;
+}
+.news__item .news__title{
+    font-weight:600;
+    margin-bottom: 5px;
+}
+
+
+
+/* 인덱스에서 공지사항 */
+.section--notice{
+
+}
+.section--notice.notice__title{
+    font-size: 22px;
+    text-align: center;
+}
+.section--notice .notice__title{
+    
+}
+
+
+
+
+/* 로그인 페이지 */
+.login__container{
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    position:relative;
+}
+.login__item{
+    margin-bottom: 7px;
+}
+.input--login-id{
+    max-width: 490px;
+    border-radius: 4px;
+    align-items: left;
+    padding:0 12px;
+    font-size:16px;
+    line-height:1.5;
+    cursor:pointer;
+}
+.input--login-password{
+    max-width: 490px;
+    border-radius: 4px;
+    align-items: left;
+    padding:0 12px;
+    font-size:16px;
+    line-height:1.5;
+    cursor:pointer;
+}
+
+
+
+/* footer */
+.section--footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section--footer .inner{
+
+}
+.footer__item{
+    font-size: 10px;
+    line-height: 0.9;
+}
+
+
